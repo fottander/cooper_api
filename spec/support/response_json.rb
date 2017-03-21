@@ -1,4 +1,4 @@
-module ResponseJSon
+module ResponseJSON
   def response_json
     JSON.parse(response.body)
   end

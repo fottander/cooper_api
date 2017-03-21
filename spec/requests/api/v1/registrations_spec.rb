@@ -45,7 +45,7 @@ RSpec.describe 'User Registration', type: :request do
         password_confirmation: 'password'
       }, headers: headers
 
-      expect(response_json['errors']['email']).to eq ['already in User']
+      expect(response_json['errors']['email']).to eq ['already in use']
       expect(response.status).to eq 422
     end
   end
