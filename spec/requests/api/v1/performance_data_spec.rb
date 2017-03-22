@@ -20,7 +20,7 @@ RSpec.describe Api::V1::PerformanceDataController, type: :request do
     end
 
     it 'returns a collection of performance data' do
-      get '/api/v1/performance_data', header: headers
+      get '/api/v1/performance_data', headers: headers
       expect(response_json['entries'].count).to eq 5
     end
   end
