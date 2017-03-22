@@ -7,6 +7,10 @@ gem 'puma', '~> 3.0'
 gem 'jbuilder', '~> 2.5'
 gem 'devise_token_auth'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development, :test do
  gem 'rspec-rails'
  gem 'shoulda-matchers'
